@@ -60,7 +60,7 @@ interaction.file <- cbind(if.ipname, if.baitname, if.preyname)
 
 if.spc <- c()
 for (i in 1:nrow(bait.file)) {
-  p <- proteins[, grep(paste("MS.MS.count.", as.character(bait.file$IP.name[i]), sep = ""), colnames(proteins.1))]
+  p <- proteins.1[, grep(paste("MS.MS.count.", as.character(bait.file$IP.name[i]), sep = ""), colnames(proteins.1))]
   if.spc <- c(if.spc, p) 
 }
 
